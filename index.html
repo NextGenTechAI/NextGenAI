@@ -1,0 +1,2301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGenAI | Global Careers, Business Growth & AI Solutions</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="NextGenAI connects professionals with career opportunities, helps businesses discover potential customers, and delivers AI, software development, and cybersecurity solutions." />
+  <meta name="keywords" content="NextGenAI, AI solutions, career development, recruitment Karachi, international job search, B2B lead generation, software engineering, cybersecurity, digital transformation, IT consulting" />
+  <meta name="author" content="Murtuza Developer" />
+  <meta name="theme-color" content="#030712" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NextGenAI | Global Careers, Business Growth & AI Solutions" />
+  <meta property="og:description" content="NextGenAI connects professionals with career opportunities, helps businesses discover potential customers, and delivers AI, software development, and cybersecurity solutions." />
+  <meta property="og:image" content="./logo.svg" />
+  <meta property="og:url" content="https://murtuzadeveloper.github.io/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NextGenAI | Global Careers, Business Growth & AI Solutions" />
+  <meta name="twitter:description" content="NextGenAI connects professionals with career opportunities, helps businesses discover potential customers, and delivers AI, software development, and cybersecurity solutions." />
+  <meta name="twitter:image" content="./logo.svg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="apple-touch-icon" href="./favicon.svg" />
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN for instant zero-build rendering on GitHub Pages -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: {
+              950: '#030712',
+              900: '#070B19',
+              850: '#0B1124',
+              800: '#111827',
+              700: '#1F2937',
+            },
+            brand: {
+              cyan: '#00F0FF',
+              blue: '#3B82F6',
+              indigo: '#6366F1',
+              violet: '#8B5CF6',
+              purple: '#A855F7',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          boxShadow: {
+            'glow-cyan': '0 0 25px -5px rgba(0, 240, 255, 0.3)',
+            'glow-blue': '0 0 25px -5px rgba(59, 130, 246, 0.3)',
+            'glow-card': '0 10px 30px -10px rgba(0, 240, 255, 0.15)',
+          },
+          animation: {
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 6s ease-in-out infinite',
+            'spin-slow': 'spin 20s linear infinite',
+            'spin-reverse': 'spin 15s linear infinite reverse',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Base Reset & Custom Scrollbar */
+    html {
+      scroll-behavior: smooth;
+      color-scheme: dark;
+    }
+    body {
+      background-color: #030712;
+      color: #F3F4F6;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    *:focus-visible {
+      outline: 2px solid #00F0FF;
+      outline-offset: 2px;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030712;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1F2937;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 240, 255, 0.2);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #374151;
+    }
+
+    /* Glassmorphism Styles */
+    .glass-card {
+      background: rgba(7, 11, 25, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(56, 189, 248, 0.18);
+    }
+    .glass-card:hover {
+      border-color: rgba(0, 240, 255, 0.45);
+      box-shadow: 0 15px 35px -10px rgba(0, 240, 255, 0.15);
+    }
+
+    /* Accessibility: Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* Strict Required Copyright Section Styling */
+    .footer-bottom {
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(56, 189, 248, 0.15);
+      text-align: center;
+    }
+    .footer-bottom p {
+      color: #D1D5DB;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+    .footer-bottom a {
+      color: #FFFFFF;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .footer-bottom a:hover {
+      color: #00F0FF;
+      text-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+    }
+  </style>
+</head>
+<body class="bg-dark-950 text-gray-100 selection:bg-cyan-500 selection:text-white relative">
+
+  <!-- Interactive Neural Constellation Canvas -->
+  <canvas id="neuralCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-60"></canvas>
+
+  <!-- Navigation Bar -->
+  <header id="mainNav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- NextGenAI Brand Logo -->
+        <a href="#hero" class="flex items-center space-x-3 group focus:outline-none focus:ring-2 focus:ring-cyan-400 rounded-lg p-1" aria-label="NextGenAI Home">
+          <div class="relative w-10 h-10 flex-shrink-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-violet-600 rounded-xl blur-sm opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="relative w-full h-full bg-dark-900 border border-cyan-500/40 rounded-xl flex items-center justify-center overflow-hidden">
+              <svg viewBox="0 0 100 100" class="w-7 h-7">
+                <path d="M24 75 L24 25 L45 25 L76 75 L76 25" fill="none" stroke="url(#navGrad)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="24" cy="25" r="5" fill="#00F0FF" />
+                <circle cx="76" cy="75" r="5" fill="#8B5CF6" />
+                <defs>
+                  <linearGradient id="navGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00F0FF" />
+                    <stop offset="50%" stop-color="#3B82F6" />
+                    <stop offset="100%" stop-color="#8B5CF6" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl font-extrabold tracking-tight text-white flex items-center">
+              NextGen<span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-violet-400">AI</span>
+              <span class="ml-1.5 px-1.5 py-0.5 text-[9px] font-semibold bg-cyan-950/80 text-cyan-300 border border-cyan-500/30 rounded uppercase tracking-wider">
+                Enterprise
+              </span>
+            </span>
+            <span class="text-[10px] text-gray-400 font-medium tracking-widest hidden sm:block">
+              CAREERS • BUSINESS • AI
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-1" aria-label="Main Navigation">
+          <a href="#hero" class="nav-link px-3.5 py-2 text-sm font-medium rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Home</a>
+          <a href="#about" class="nav-link px-3.5 py-2 text-sm font-medium rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">About Us</a>
+          <a href="#services" class="nav-link px-3.5 py-2 text-sm font-medium rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Services</a>
+          <a href="#industries" class="nav-link px-3.5 py-2 text-sm font-medium rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Industries</a>
+          <a href="#pricing" class="nav-link px-3.5 py-2 text-sm font-medium rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Pricing</a>
+          <a href="#how-it-works" class="nav-link px-3.5 py-2 text-sm font-medium rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">How It Works</a>
+          <a href="#contact" class="nav-link px-3.5 py-2 text-sm font-medium rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Contact</a>
+        </nav>
+
+        <!-- CTA & Mobile Menu Toggle -->
+        <div class="flex items-center space-x-3">
+          <a href="#contact" class="hidden sm:inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-semibold rounded-xl group focus:outline-none focus:ring-2 focus:ring-cyan-400 shadow-lg shadow-cyan-500/20">
+            <span class="w-full h-full bg-gradient-to-br from-cyan-400 via-blue-600 to-violet-600 group-hover:from-cyan-300 group-hover:to-violet-500 absolute"></span>
+            <span class="relative px-5 py-2 transition-all ease-out bg-dark-900 rounded-[10px] group-hover:bg-opacity-0 duration-300 flex items-center text-white">
+              <i data-lucide="sparkles" class="w-4 h-4 mr-1.5 text-cyan-400 group-hover:text-white"></i>
+              Let's Connect
+              <i data-lucide="arrow-up-right" class="w-4 h-4 ml-1 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+            </span>
+          </a>
+
+          <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/10 focus:outline-none" aria-label="Toggle Navigation Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="hidden lg:hidden bg-dark-950/95 border-b border-cyan-500/20 backdrop-blur-xl px-4 pt-4 pb-6 shadow-2xl">
+      <div class="flex flex-col space-y-1">
+        <a href="#hero" class="mobile-nav-link px-4 py-3 rounded-xl text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Home</a>
+        <a href="#about" class="mobile-nav-link px-4 py-3 rounded-xl text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">About Us</a>
+        <a href="#services" class="mobile-nav-link px-4 py-3 rounded-xl text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Services</a>
+        <a href="#industries" class="mobile-nav-link px-4 py-3 rounded-xl text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Industries</a>
+        <a href="#pricing" class="mobile-nav-link px-4 py-3 rounded-xl text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Pricing</a>
+        <a href="#how-it-works" class="mobile-nav-link px-4 py-3 rounded-xl text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">How It Works</a>
+        <a href="#contact" class="mobile-nav-link px-4 py-3 rounded-xl text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Contact</a>
+        <div class="pt-3">
+          <a href="#contact" class="w-full flex items-center justify-center space-x-2 py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-600 to-violet-600 text-white font-semibold shadow-lg shadow-cyan-500/25">
+            <span>Let's Connect</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+
+    <!-- 4. Hero Section -->
+    <section id="hero" class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+      <!-- Background Ambient Glow -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-gradient-radial from-cyan-500/15 via-blue-600/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/3 right-10 w-[420px] h-[420px] bg-violet-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Hero Content (7 Cols) -->
+          <div class="lg:col-span-7 text-center lg:text-left space-y-7">
+            
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-medium backdrop-blur-md shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+              <i data-lucide="sparkles" class="w-4 h-4 text-cyan-400"></i>
+              <span>Global Talent &amp; Frontier AI Infrastructure</span>
+            </div>
+
+            <div class="space-y-3">
+              <div class="text-sm font-bold tracking-[0.25em] text-cyan-400 uppercase">
+                Enterprise Career, Growth &amp; Technology Partner
+              </div>
+              <h1 class="text-4xl sm:text-6xl xl:text-7xl font-extrabold text-white tracking-tight leading-[1.08]">
+                NEXTGEN<span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500">AI</span>
+              </h1>
+              <p class="text-xl sm:text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-cyan-100 to-blue-200 leading-snug">
+                Empowering Careers. Accelerating Business. Engineering the Future.
+              </p>
+            </div>
+
+            <p className="text-base sm:text-lg text-gray-300/90 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              Connecting professionals with global career opportunities, helping businesses discover potential customers, and delivering intelligent technology solutions that drive innovation and growth.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#services" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-600 to-violet-600 hover:from-cyan-400 hover:to-violet-500 text-white font-semibold text-base shadow-lg shadow-cyan-500/25 transition-all duration-300 flex items-center justify-center group">
+                <span>Explore Our Services</span>
+                <i data-lucide="arrow-right" class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"></i>
+              </a>
+              <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-dark-900/90 hover:bg-dark-850 text-gray-200 hover:text-white border border-cyan-500/30 hover:border-cyan-400/60 font-semibold text-base transition-all duration-300 backdrop-blur-md flex items-center justify-center">
+                <span>Contact Our Team</span>
+              </a>
+            </div>
+
+            <!-- 3 Animated Capability Indicators -->
+            <div class="pt-6 border-t border-cyan-500/15">
+              <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">
+                Core Capability Pillars
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                
+                <div class="group p-3 rounded-xl bg-dark-900/60 border border-cyan-500/20 hover:border-cyan-400/50 backdrop-blur-sm transition-all duration-300 flex items-center space-x-3">
+                  <div class="p-2 rounded-lg bg-cyan-950/80 text-cyan-400 border border-cyan-500/30 group-hover:scale-110 transition-transform">
+                    <i data-lucide="globe-2" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xs font-bold text-white group-hover:text-cyan-300 transition-colors">
+                      Global Career Development
+                    </h3>
+                    <p class="text-[10px] text-gray-400">Local &amp; Overseas Networks</p>
+                  </div>
+                </div>
+
+                <div class="group p-3 rounded-xl bg-dark-900/60 border border-blue-500/20 hover:border-blue-400/50 backdrop-blur-sm transition-all duration-300 flex items-center space-x-3">
+                  <div class="p-2 rounded-lg bg-blue-950/80 text-blue-400 border border-blue-500/30 group-hover:scale-110 transition-transform">
+                    <i data-lucide="trending-up" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xs font-bold text-white group-hover:text-blue-300 transition-colors">
+                      Intelligent Business Growth
+                    </h3>
+                    <p class="text-[10px] text-gray-400">B2B Pipelines &amp; Lead Gen</p>
+                  </div>
+                </div>
+
+                <div class="group p-3 rounded-xl bg-dark-900/60 border border-violet-500/20 hover:border-violet-400/50 backdrop-blur-sm transition-all duration-300 flex items-center space-x-3">
+                  <div class="p-2 rounded-lg bg-violet-950/80 text-violet-400 border border-violet-500/30 group-hover:scale-110 transition-transform">
+                    <i data-lucide="cpu" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xs font-bold text-white group-hover:text-violet-300 transition-colors">
+                      AI-Powered Technology
+                    </h3>
+                    <p class="text-[10px] text-gray-400">LLMs, Custom Apps &amp; Cyber</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Hero Visual: Sophisticated Abstract AI Visual (5 Cols) -->
+          <div class="lg:col-span-5 flex items-center justify-center relative">
+            <div class="relative w-full max-w-[440px] aspect-square flex items-center justify-center">
+              
+              <!-- Radial Backdrop Glow -->
+              <div class="absolute inset-4 rounded-full bg-gradient-to-tr from-cyan-500/25 via-blue-600/20 to-violet-600/20 blur-2xl animate-pulse-slow"></div>
+
+              <!-- Rotating Ring 1 -->
+              <div class="absolute w-[92%] h-[92%] rounded-full border border-dashed border-cyan-500/30 animate-spin-slow"></div>
+
+              <!-- Rotating Ring 2 -->
+              <div class="absolute w-[76%] h-[76%] rounded-full border border-violet-500/30 animate-spin-reverse"></div>
+
+              <!-- Rotating Ring 3 with Synapse Nodes -->
+              <div class="absolute w-[60%] h-[60%] rounded-full border border-blue-400/30 animate-spin-slow">
+                <div class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-cyan-400 shadow-glow-cyan"></div>
+                <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-violet-400 shadow-lg shadow-violet-500/50"></div>
+              </div>
+
+              <!-- Central Abstract Neural Core Card -->
+              <div class="relative z-10 w-[260px] h-[260px] rounded-3xl bg-dark-900/85 backdrop-blur-xl border border-cyan-500/40 p-5 shadow-2xl shadow-cyan-950/60 flex flex-col justify-between overflow-hidden">
+                <div class="flex items-center justify-between border-b border-cyan-500/20 pb-3">
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+                    <span class="text-[11px] font-mono font-bold text-cyan-300 tracking-wider">
+                      NEURAL_CORE_V4
+                    </span>
+                  </div>
+                  <span class="text-[10px] px-2 py-0.5 rounded-full bg-cyan-950 text-cyan-300 border border-cyan-500/30 font-semibold">
+                    ACTIVE
+                  </span>
+                </div>
+
+                <div class="py-2 flex items-center justify-center">
+                  <svg viewBox="0 0 120 120" class="w-24 h-24 filter drop-shadow-[0_0_12px_rgba(0,240,255,0.4)]">
+                    <polygon points="60,10 105,35 105,85 60,110 15,85 15,35" fill="none" stroke="rgba(0,240,255,0.3)" stroke-width="1.5" stroke-dasharray="4 3" />
+                    <polygon points="60,25 90,42 90,78 60,95 30,78 30,42" fill="rgba(6,182,212,0.06)" stroke="url(#heroCoreGrad)" stroke-width="2" />
+                    <circle cx="60" cy="60" r="16" fill="url(#heroCoreCenterGrad)" />
+                    <circle cx="60" cy="60" r="7" fill="#FFFFFF" />
+                    <circle cx="60" cy="25" r="4" fill="#00F0FF" />
+                    <circle cx="90" cy="42" r="3.5" fill="#3B82F6" />
+                    <circle cx="90" cy="78" r="4" fill="#8B5CF6" />
+                    <circle cx="60" cy="95" r="3.5" fill="#00F0FF" />
+                    <circle cx="30" cy="78" r="4" fill="#3B82F6" />
+                    <circle cx="30" cy="42" r="3.5" fill="#8B5CF6" />
+                    <line x1="60" y1="25" x2="60" y2="44" stroke="#00F0FF" stroke-width="1.5" />
+                    <line x1="60" y1="76" x2="60" y2="95" stroke="#8B5CF6" stroke-width="1.5" />
+                    <line x1="30" y1="60" x2="44" y2="60" stroke="#3B82F6" stroke-width="1.5" />
+                    <line x1="76" y1="60" x2="90" y2="60" stroke="#00F0FF" stroke-width="1.5" />
+                    <defs>
+                      <linearGradient id="heroCoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00F0FF" />
+                        <stop offset="50%" stop-color="#3B82F6" />
+                        <stop offset="100%" stop-color="#8B5CF6" />
+                      </linearGradient>
+                      <radialGradient id="heroCoreCenterGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#00F0FF" />
+                        <stop offset="100%" stop-color="#1E3A8A" />
+                      </radialGradient>
+                    </defs>
+                  </svg>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 text-[10px] font-mono text-gray-300 pt-2 border-t border-cyan-500/20">
+                  <div class="flex items-center space-x-1.5">
+                    <i data-lucide="terminal" class="w-3.5 h-3.5 text-cyan-400"></i>
+                    <span>LATENCY: 12ms</span>
+                  </div>
+                  <div class="flex items-center space-x-1.5 justify-end">
+                    <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i>
+                    <span>SECURE: 100%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Pill Badges -->
+              <div class="absolute -top-4 -right-2 z-20 px-3.5 py-1.5 rounded-xl bg-dark-950/90 border border-cyan-500/40 text-xs font-semibold text-cyan-300 shadow-xl backdrop-blur-md flex items-center space-x-2 animate-float">
+                <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                <span>Global Talent Matrix</span>
+              </div>
+              <div class="absolute -bottom-4 -left-2 z-20 px-3.5 py-1.5 rounded-xl bg-dark-950/90 border border-violet-500/40 text-xs font-semibold text-violet-300 shadow-xl backdrop-blur-md flex items-center space-x-2 animate-float" style="animation-delay: 2s;">
+                <span class="w-2 h-2 rounded-full bg-violet-400"></span>
+                <span>Enterprise AI Agents</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. About NextGenAI -->
+    <section id="about" class="py-24 relative overflow-hidden bg-dark-950/40">
+      <div class="absolute top-1/2 left-0 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none -translate-y-1/2"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+            <span>About NextGenAI</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            One Partner. Multiple Growth Opportunities.
+          </h2>
+          <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+            NextGenAI combines strategic networking, business development, artificial intelligence, software engineering, and security technologies to help individuals and organizations navigate an increasingly competitive global marketplace.
+          </p>
+        </div>
+
+        <!-- 3 Interactive Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="glass-card group relative rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between overflow-hidden">
+            <div class="relative z-10 space-y-6">
+              <div class="flex items-center justify-between">
+                <div class="w-14 h-14 rounded-xl bg-cyan-950/80 border border-cyan-500/40 flex items-center justify-center text-cyan-400 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <i data-lucide="globe" class="w-7 h-7"></i>
+                </div>
+                <span class="text-[11px] font-mono font-semibold text-gray-400 bg-dark-850 px-2.5 py-1 rounded-full border border-gray-700">01</span>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors">Global Opportunities</h3>
+                <p class="text-xs font-medium text-cyan-400 mt-1">Career Acceleration &amp; Placement</p>
+              </div>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Helping professionals explore relevant employment opportunities across local and international markets with tailored profile positioning and network access.
+              </p>
+              <div class="space-y-2.5 pt-2 border-t border-cyan-500/10">
+                <div class="flex items-start space-x-2 text-xs text-gray-300">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                  <span>Karachi &amp; nationwide career roadmaps</span>
+                </div>
+                <div class="flex items-start space-x-2 text-xs text-gray-300">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                  <span>International market opportunity mapping</span>
+                </div>
+                <div class="flex items-start space-x-2 text-xs text-gray-300">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                  <span>Executive CV &amp; LinkedIn profile optimization</span>
+                </div>
+              </div>
+            </div>
+            <div class="relative z-10 pt-6 mt-6 border-t border-cyan-500/10">
+              <a href="#services" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 group-hover:translate-x-1 transition-all">
+                <span>Explore career services</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="glass-card group relative rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between overflow-hidden">
+            <div class="relative z-10 space-y-6">
+              <div class="flex items-center justify-between">
+                <div class="w-14 h-14 rounded-xl bg-blue-950/80 border border-blue-500/40 flex items-center justify-center text-blue-400 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <i data-lucide="trending-up" class="w-7 h-7"></i>
+                </div>
+                <span class="text-[11px] font-mono font-semibold text-gray-400 bg-dark-850 px-2.5 py-1 rounded-full border border-gray-700">02</span>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-white group-hover:text-blue-300 transition-colors">Business Growth</h3>
+                <p class="text-xs font-medium text-blue-400 mt-1">Customer Acquisition &amp; Pipelines</p>
+              </div>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Helping organizations identify potential customers, develop sales pipelines, and explore new markets through structured B2B outbound strategies and automated outreach.
+              </p>
+              <div class="space-y-2.5 pt-2 border-t border-cyan-500/10">
+                <div class="flex items-start space-x-2 text-xs text-gray-300">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                  <span>Targeted B2B lead generation &amp; validation</span>
+                </div>
+                <div class="flex items-start space-x-2 text-xs text-gray-300">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                  <span>High-converting sales funnel architecture</span>
+                </div>
+                <div class="flex items-start space-x-2 text-xs text-gray-300">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                  <span>CRM automation &amp; pipeline optimization</span>
+                </div>
+              </div>
+            </div>
+            <div class="relative z-10 pt-6 mt-6 border-t border-cyan-500/10">
+              <a href="#services" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 group-hover:translate-x-1 transition-all">
+                <span>Explore business growth</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass-card group relative rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between overflow-hidden">
+            <div class="relative z-10 space-y-6">
+              <div class="flex items-center justify-between">
+                <div class="w-14 h-14 rounded-xl bg-violet-950/80 border border-violet-500/40 flex items-center justify-center text-violet-400 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <i data-lucide="cpu" class="w-7 h-7"></i>
+                </div>
+                <span class="text-[11px] font-mono font-semibold text-gray-400 bg-dark-850 px-2.5 py-1 rounded-full border border-gray-700">03</span>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-white group-hover:text-violet-300 transition-colors">Intelligent Technology</h3>
+                <p class="text-xs font-medium text-violet-400 mt-1">AI, Software &amp; Cybersecurity</p>
+              </div>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Building AI applications, software platforms, automation systems, and security solutions that turn complex modern engineering challenges into competitive market advantages.
+              </p>
+              <div class="space-y-2.5 pt-2 border-t border-cyan-500/10">
+                <div class="flex items-start space-x-2 text-xs text-gray-300">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                  <span>Generative AI &amp; autonomous agent workflows</span>
+                </div>
+                <div class="flex items-start space-x-2 text-xs text-gray-300">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                  <span>Full-stack custom software &amp; cloud apps</span>
+                </div>
+                <div class="flex items-start space-x-2 text-xs text-gray-300">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                  <span>Zero-trust cybersecurity &amp; vulnerability hardening</span>
+                </div>
+              </div>
+            </div>
+            <div class="relative z-10 pt-6 mt-6 border-t border-cyan-500/10">
+              <a href="#services" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 group-hover:translate-x-1 transition-all">
+                <span>Explore AI &amp; software</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1.5"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Services Section (7 Interactive Service Cards) -->
+    <section id="services" class="py-24 relative overflow-hidden bg-dark-900/60">
+      <div class="absolute top-1/4 right-0 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-10 left-10 w-[450px] h-[450px] bg-violet-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i>
+            <span>Enterprise Solutions</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            Comprehensive Services Designed for Impact
+          </h2>
+          <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+            Delivering strategic synergy between career acceleration, outbound business growth, bespoke artificial intelligence, software engineering, and defensive cybersecurity.
+          </p>
+        </div>
+
+        <!-- 7 Interactive Service Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Service 1: Global Careers & Recruitment Support -->
+          <div class="glass-card group relative rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="space-y-5">
+              <div class="flex items-start justify-between">
+                <div class="p-3.5 rounded-xl bg-dark-900 border border-cyan-500/30 text-cyan-400 group-hover:scale-110 group-hover:text-cyan-300 transition-all duration-300">
+                  <i data-lucide="compass" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-mono font-medium text-cyan-400/80 bg-cyan-950/60 px-2.5 py-1 rounded-full border border-cyan-500/20">SERVICE 01</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Global Careers &amp; Recruitment Support
+                </h3>
+                <p class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mt-1">
+                  Your Career. Your Country. Your Opportunity.
+                </p>
+              </div>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Empowering professionals with strategic positioning, curated employer networks, and personalized guidance across local and worldwide markets.
+              </p>
+              <div class="pt-3 border-t border-cyan-500/10 space-y-2">
+                <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Key Capabilities:</div>
+                <ul class="space-y-2 text-xs text-gray-300">
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Karachi and nationwide job-search assistance</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>International job-search support</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Employer and recruitment-network connections</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>CV and résumé optimization</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Professional profile development</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Interview preparation and career consulting</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Remote, hybrid, and onsite opportunity research</span></li>
+                </ul>
+              </div>
+              <div class="p-3 rounded-xl bg-dark-900/90 border border-amber-500/30 text-amber-300 text-[11px] leading-relaxed flex items-start space-x-2">
+                <i data-lucide="alert-circle" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>Career assistance provides strategic consulting and market research; it does not guarantee interviews, job offers, visas, or employment.</span>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-cyan-500/15">
+              <button onclick="prefillContact('Global Careers & Recruitment Support')" class="w-full py-2.5 px-4 rounded-xl bg-dark-900 hover:bg-cyan-950/80 border border-cyan-500/30 hover:border-cyan-400 text-cyan-300 hover:text-white text-xs font-semibold transition-all flex items-center justify-center space-x-1.5">
+                <span>Inquire About Career Services</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 2: Business Development & Customer Acquisition -->
+          <div class="glass-card group relative rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="space-y-5">
+              <div class="flex items-start justify-between">
+                <div class="p-3.5 rounded-xl bg-dark-900 border border-cyan-500/30 text-cyan-400 group-hover:scale-110 group-hover:text-cyan-300 transition-all duration-300">
+                  <i data-lucide="trending-up" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-mono font-medium text-cyan-400/80 bg-cyan-950/60 px-2.5 py-1 rounded-full border border-cyan-500/20">SERVICE 02</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Business Development &amp; Customer Acquisition
+                </h3>
+                <p class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mt-1">
+                  Turn Opportunities Into Business Growth.
+                </p>
+              </div>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Accelerate corporate expansion through targeted outbound prospecting, high-value networking, and data-driven customer acquisition pipelines.
+              </p>
+              <div class="pt-3 border-t border-cyan-500/10 space-y-2">
+                <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Key Capabilities:</div>
+                <ul class="space-y-2 text-xs text-gray-300">
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>B2B lead generation &amp; validation</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Prospect research and qualification</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Executive business networking</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>International market research</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Sales pipeline development</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Customer acquisition strategies</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>AI-powered sales automation &amp; CRM workflow</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-cyan-500/15">
+              <button onclick="prefillContact('Business Development & Customer Acquisition')" class="w-full py-2.5 px-4 rounded-xl bg-dark-900 hover:bg-cyan-950/80 border border-cyan-500/30 hover:border-cyan-400 text-cyan-300 hover:text-white text-xs font-semibold transition-all flex items-center justify-center space-x-1.5">
+                <span>Inquire About Business Growth</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 3: Artificial Intelligence & Intelligent Automation -->
+          <div class="glass-card group relative rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="space-y-5">
+              <div class="flex items-start justify-between">
+                <div class="p-3.5 rounded-xl bg-dark-900 border border-cyan-500/30 text-cyan-400 group-hover:scale-110 group-hover:text-cyan-300 transition-all duration-300">
+                  <i data-lucide="cpu" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-mono font-medium text-cyan-400/80 bg-cyan-950/60 px-2.5 py-1 rounded-full border border-cyan-500/20">SERVICE 03</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Artificial Intelligence &amp; Intelligent Automation
+                </h3>
+                <p class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mt-1">
+                  Build Smarter. Operate Faster. Innovate Further.
+                </p>
+              </div>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Pioneering custom generative AI models, autonomous multi-agent workflows, and enterprise retrieval systems tailored for mission-critical operations.
+              </p>
+              <div class="pt-3 border-t border-cyan-500/10 space-y-2">
+                <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Key Capabilities:</div>
+                <ul class="space-y-2 text-xs text-gray-300">
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Generative AI and LLM applications</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>AI agents and autonomous workflows</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Enterprise AI assistants</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Retrieval-Augmented Generation (RAG)</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Intelligent customer support systems</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>OCR and intelligent document processing</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Private and locally deployed AI solutions</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-cyan-500/15">
+              <button onclick="prefillContact('Artificial Intelligence & Intelligent Automation')" class="w-full py-2.5 px-4 rounded-xl bg-dark-900 hover:bg-cyan-950/80 border border-cyan-500/30 hover:border-cyan-400 text-cyan-300 hover:text-white text-xs font-semibold transition-all flex items-center justify-center space-x-1.5">
+                <span>Inquire About AI Solutions</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 4: Software Development & IT Solutions -->
+          <div class="glass-card group relative rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="space-y-5">
+              <div class="flex items-start justify-between">
+                <div class="p-3.5 rounded-xl bg-dark-900 border border-cyan-500/30 text-cyan-400 group-hover:scale-110 group-hover:text-cyan-300 transition-all duration-300">
+                  <i data-lucide="code" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-mono font-medium text-cyan-400/80 bg-cyan-950/60 px-2.5 py-1 rounded-full border border-cyan-500/20">SERVICE 04</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Software Development &amp; IT Solutions
+                </h3>
+                <p class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mt-1">
+                  Your Vision. Our Technology. Your Competitive Advantage.
+                </p>
+              </div>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Architecting high-performance web platforms, enterprise software, cloud infrastructure, and robust API ecosystems engineered for scale.
+              </p>
+              <div class="pt-3 border-t border-cyan-500/10 space-y-2">
+                <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Key Capabilities:</div>
+                <ul class="space-y-2 text-xs text-gray-300">
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Corporate websites &amp; modern web apps</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Custom software &amp; API development</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Mobile and cross-platform applications</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>E-commerce &amp; SaaS product development</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Database architecture &amp; cloud deployment</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Enterprise integrations &amp; maintenance</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-cyan-500/15">
+              <button onclick="prefillContact('Software Development & IT Solutions')" class="w-full py-2.5 px-4 rounded-xl bg-dark-900 hover:bg-cyan-950/80 border border-cyan-500/30 hover:border-cyan-400 text-cyan-300 hover:text-white text-xs font-semibold transition-all flex items-center justify-center space-x-1.5">
+                <span>Inquire About Software Development</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 5: Cybersecurity & Security Technology -->
+          <div class="glass-card group relative rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="space-y-5">
+              <div class="flex items-start justify-between">
+                <div class="p-3.5 rounded-xl bg-dark-900 border border-cyan-500/30 text-cyan-400 group-hover:scale-110 group-hover:text-cyan-300 transition-all duration-300">
+                  <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-mono font-medium text-cyan-400/80 bg-cyan-950/60 px-2.5 py-1 rounded-full border border-cyan-500/20">SERVICE 05</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Cybersecurity &amp; Security Technology
+                </h3>
+                <p class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mt-1">
+                  Protect Your Systems. Strengthen Your Business.
+                </p>
+              </div>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Defending mission-critical assets through proactive vulnerability assessments, AI threat detection, zero-trust architectures, and compliance hardening.
+              </p>
+              <div class="pt-3 border-t border-cyan-500/10 space-y-2">
+                <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Key Capabilities:</div>
+                <ul class="space-y-2 text-xs text-gray-300">
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Cybersecurity consulting &amp; audits</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Website and application security hardening</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Authorized vulnerability assessments</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Network security &amp; infrastructure defense</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>AI-assisted threat monitoring &amp; alerting</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Identity and access management (IAM)</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Security workflow automation</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-cyan-500/15">
+              <button onclick="prefillContact('Cybersecurity & Security Technology')" class="w-full py-2.5 px-4 rounded-xl bg-dark-900 hover:bg-cyan-950/80 border border-cyan-500/30 hover:border-cyan-400 text-cyan-300 hover:text-white text-xs font-semibold transition-all flex items-center justify-center space-x-1.5">
+                <span>Inquire About Cybersecurity</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 6: Digital Transformation & Business Consulting -->
+          <div class="glass-card group relative rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="space-y-5">
+              <div class="flex items-start justify-between">
+                <div class="p-3.5 rounded-xl bg-dark-900 border border-cyan-500/30 text-cyan-400 group-hover:scale-110 group-hover:text-cyan-300 transition-all duration-300">
+                  <i data-lucide="boxes" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-mono font-medium text-cyan-400/80 bg-cyan-950/60 px-2.5 py-1 rounded-full border border-cyan-500/20">SERVICE 06</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Digital Transformation &amp; Consulting
+                </h3>
+                <p class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mt-1">
+                  Modern Technology. Smarter Decisions. Sustainable Growth.
+                </p>
+              </div>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Bridging strategic business goals with cutting-edge tech execution, streamlining operations, and navigating high-impact organizational pivots.
+              </p>
+              <div class="pt-3 border-t border-cyan-500/10 space-y-2">
+                <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Key Capabilities:</div>
+                <ul class="space-y-2 text-xs text-gray-300">
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Digital transformation planning</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Enterprise AI adoption strategies</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Technology architecture design</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Business process optimization</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Market and competitor research</span></li>
+                  <li class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Operational efficiency improvements</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-cyan-500/15">
+              <button onclick="prefillContact('Digital Transformation & Business Consulting')" class="w-full py-2.5 px-4 rounded-xl bg-dark-900 hover:bg-cyan-950/80 border border-cyan-500/30 hover:border-cyan-400 text-cyan-300 hover:text-white text-xs font-semibold transition-all flex items-center justify-center space-x-1.5">
+                <span>Inquire About Digital Transformation</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 7: IT Consulting (Full Width On Large Grid) -->
+          <div class="glass-card group relative rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between md:col-span-2 lg:col-span-3">
+            <div class="space-y-5">
+              <div class="flex items-start justify-between">
+                <div class="p-3.5 rounded-xl bg-dark-900 border border-cyan-500/30 text-cyan-400 group-hover:scale-110 group-hover:text-cyan-300 transition-all duration-300">
+                  <i data-lucide="layers" class="w-6 h-6"></i>
+                </div>
+                <span class="text-[11px] font-mono font-medium text-cyan-400/80 bg-cyan-950/60 px-2.5 py-1 rounded-full border border-cyan-500/20">SERVICE 07</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  IT Consulting
+                </h3>
+                <p class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mt-1">
+                  The Right Technology for Your Business.
+                </p>
+              </div>
+              <p class="text-sm text-gray-300 leading-relaxed max-w-4xl">
+                Providing strategic engineering advisory, vendor selection, infrastructure audits, and scalable roadmap design to maximize technical ROI and operational stability.
+              </p>
+              <div class="pt-3 border-t border-cyan-500/10 space-y-2">
+                <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Key Capabilities:</div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 text-xs text-gray-300">
+                  <div class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Technology assessments &amp; audits</span></div>
+                  <div class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Technical architecture blueprints</span></div>
+                  <div class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Software &amp; platform selection</span></div>
+                  <div class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Infrastructure planning &amp; cloud strategy</span></div>
+                  <div class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>System integration &amp; API governance</span></div>
+                  <div class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Implementation guidance &amp; oversight</span></div>
+                  <div class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>Scalability consulting &amp; performance</span></div>
+                  <div class="flex items-start space-x-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5"></i><span>CTO &amp; VP Engineering advisory</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-cyan-500/15">
+              <button onclick="prefillContact('IT Consulting')" class="w-full py-3 px-4 rounded-xl bg-dark-900 hover:bg-cyan-950/80 border border-cyan-500/30 hover:border-cyan-400 text-cyan-300 hover:text-white text-xs font-semibold transition-all flex items-center justify-center space-x-1.5">
+                <span>Inquire About IT Consulting</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. Industries We Serve (14 Interactive Industry Items) -->
+    <section id="industries" class="py-24 relative overflow-hidden bg-dark-950/70">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-gradient-radial from-blue-600/10 via-transparent to-transparent rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+            <span>Global Market Reach</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            Industries We Serve
+          </h2>
+          <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+            Bridging sector-specific challenges with intelligent automation, custom software, enterprise cybersecurity, and strategic talent pipelines across 14 high-impact domains.
+          </p>
+        </div>
+
+        <!-- 14 Industry Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+          
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="server" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Information Technology</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Scalable infrastructure, cloud engineering, and enterprise system deployments.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Artificial Intelligence</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Frontier LLM development, neural frameworks, and autonomous workflow tooling.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="landmark" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Banking and FinTech</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">High-security financial architectures, payment integrations, and compliance.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="activity" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Healthcare &amp; HealthTech</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">HIPAA-conscious data pipelines, telemedicine engines, and clinical workflow AI.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="shield-alert" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Cybersecurity</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Threat hunting systems, SOC automation, perimeter defense, and zero-trust.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">E-commerce and Retail</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">High-conversion digital storefronts, inventory intelligence, and customer analytics.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="radio" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Telecommunications</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Next-generation network orchestration, messaging platforms, and high-load APIs.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="factory" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Manufacturing</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">IoT sensor telemetry, predictive maintenance alerts, and industrial operational intelligence.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="truck" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Logistics &amp; Supply Chain</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Route optimization, fleet tracking, warehouse automation, and delivery monitoring.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Education and EdTech</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Adaptive learning environments, LMS platforms, and interactive knowledge assistants.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="building-2" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Real Estate &amp; Construction</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Property management portals, CRM pipelines, and automated valuation workflows.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="briefcase" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Marketing &amp; Services</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Dynamic customer acquisition funnels, campaign intelligence, and client reporting.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="users" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Recruitment &amp; HR</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Talent discovery algorithms, ATS integrations, and skills-matching automation.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-5 rounded-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                <i data-lucide="zap" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">Energy &amp; Infrastructure</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Grid monitoring systems, resource usage analytics, and sustainable energy tracking.</p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-cyan-500/10 flex items-center justify-between text-[11px] text-gray-500 group-hover:text-cyan-400">
+              <span>Domain Ready</span><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. Why Choose NextGenAI? (6 Differentiators) -->
+    <section id="why-us" class="py-24 relative overflow-hidden bg-dark-950/40">
+      <div class="absolute top-1/3 left-10 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-10 right-10 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-cyan-400"></i>
+            <span>Why NextGenAI</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            Innovation Meets Opportunity.
+          </h2>
+          <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+            By harmonizing global career development with cutting-edge artificial intelligence, robust software engineering, and defensive cybersecurity, we provide a unified partner for long-term growth.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="glass-card group p-7 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-xl bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="globe" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-gray-400 bg-dark-800 px-2 py-0.5 rounded border border-gray-700">01</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">Global Opportunities</h3>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Career and business development support across local hubs and premier international markets.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-cyan-500/10 flex items-center justify-between text-xs text-cyan-400 font-medium">
+              <span>Enterprise Grade</span><span class="w-2 h-0.5 bg-cyan-400 rounded-full group-hover:w-8 transition-all duration-300"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-7 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-xl bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="brain" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-gray-400 bg-dark-800 px-2 py-0.5 rounded border border-gray-700">02</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">AI-Driven Innovation</h3>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Practical, real-world AI applications and intelligent automation engineered to deliver measurable impact.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-cyan-500/10 flex items-center justify-between text-xs text-cyan-400 font-medium">
+              <span>Enterprise Grade</span><span class="w-2 h-0.5 bg-cyan-400 rounded-full group-hover:w-8 transition-all duration-300"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-7 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-xl bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="target" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-gray-400 bg-dark-800 px-2 py-0.5 rounded border border-gray-700">03</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">Business-Focused Strategy</h3>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Solutions strictly aligned with tangible customer acquisition, revenue growth, and operational productivity.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-cyan-500/10 flex items-center justify-between text-xs text-cyan-400 font-medium">
+              <span>Enterprise Grade</span><span class="w-2 h-0.5 bg-cyan-400 rounded-full group-hover:w-8 transition-all duration-300"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-7 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-xl bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="sliders" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-gray-400 bg-dark-800 px-2 py-0.5 rounded border border-gray-700">04</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">Customized Solutions</h3>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Tailored roadmaps crafted precisely around individual career trajectories and organization-specific demands.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-cyan-500/10 flex items-center justify-between text-xs text-cyan-400 font-medium">
+              <span>Enterprise Grade</span><span class="w-2 h-0.5 bg-cyan-400 rounded-full group-hover:w-8 transition-all duration-300"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-7 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-xl bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="workflow" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-gray-400 bg-dark-800 px-2 py-0.5 rounded border border-gray-700">05</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">Integrated Expertise</h3>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Holistic synergies across executive career consulting, outbound sales growth, custom software, AI, and security.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-cyan-500/10 flex items-center justify-between text-xs text-cyan-400 font-medium">
+              <span>Enterprise Grade</span><span class="w-2 h-0.5 bg-cyan-400 rounded-full group-hover:w-8 transition-all duration-300"></span>
+            </div>
+          </div>
+
+          <div class="glass-card group p-7 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-xl bg-dark-850 border border-cyan-500/30 text-cyan-400 group-hover:bg-gradient-to-br group-hover:from-cyan-500 group-hover:to-blue-600 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="rocket" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-gray-400 bg-dark-800 px-2 py-0.5 rounded border border-gray-700">06</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">Future-Ready Technology</h3>
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Scalable, modern software architectures built to adapt gracefully as global technology and markets evolve.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-cyan-500/10 flex items-center justify-between text-xs text-cyan-400 font-medium">
+              <span>Enterprise Grade</span><span class="w-2 h-0.5 bg-cyan-400 rounded-full group-hover:w-8 transition-all duration-300"></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. Pricing Section (Transparent Packages) -->
+    <section id="pricing" class="py-24 relative overflow-hidden bg-dark-900/70">
+      <div class="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-gradient-radial from-cyan-500/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i>
+            <span>Transparent Pricing</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            Clear, Scope-Based Packages
+          </h2>
+          <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+            Transparent investment tiers for executive career positioning and bespoke enterprise technology consulting. All scopes and deliverables are finalized prior to engagement.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- Package 1: Karachi Job Search Package -->
+          <div class="glass-card relative rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between">
+            <div class="space-y-6">
+              <div>
+                <span class="text-xs font-mono font-semibold text-cyan-400 uppercase tracking-wider">Career Services</span>
+                <h3 class="text-2xl font-bold text-white mt-1">Karachi Job Search Package</h3>
+                <p class="text-xs text-gray-400 mt-1">Local Market Opportunity Accelerator</p>
+              </div>
+
+              <div class="py-4 border-y border-cyan-500/15">
+                <div class="text-xs text-gray-400 font-medium uppercase tracking-wider mb-1">Starting from</div>
+                <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-blue-300">
+                  PKR 100,000
+                </div>
+              </div>
+
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Designed specifically for candidates seeking strategic job-search assistance and professional profile positioning within Karachi.
+              </p>
+
+              <div class="space-y-3 pt-2">
+                <div class="text-xs font-semibold text-gray-300 uppercase tracking-wider">Included Deliverables:</div>
+                <ul class="space-y-2.5 text-xs text-gray-300">
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>Targeted job-search support in Karachi</span></li>
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>Professional profile guidance &amp; CV optimization</span></li>
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>Relevant local market opportunity research</span></li>
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>Career assistance according to the agreed scope</span></li>
+                </ul>
+              </div>
+
+              <div class="p-3 rounded-xl bg-dark-900 border border-cyan-500/20 text-[11px] text-gray-400 leading-relaxed">
+                Starting prices transparently stated. Package deliverables, duration, and applicable terms must be agreed upon in writing before payment. Career packages do not guarantee employment, interviews, job offers, visas, or overseas placements.
+              </div>
+            </div>
+
+            <div class="pt-8 mt-6 border-t border-cyan-500/15">
+              <button onclick="prefillContact('Karachi Job Search Package (PKR 100,000)')" class="w-full py-3.5 px-4 rounded-xl font-semibold text-sm bg-dark-900 hover:bg-cyan-950/80 text-cyan-300 hover:text-white border border-cyan-500/30 hover:border-cyan-400/60 transition-all flex items-center justify-center space-x-2">
+                <span>Request Karachi Package</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Package 2: International Job Search Package (Highlighted) -->
+          <div class="relative rounded-3xl p-8 bg-dark-950/90 border-2 border-cyan-400 shadow-2xl shadow-cyan-500/20 lg:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-[11px] font-bold tracking-wider uppercase shadow-md flex items-center space-x-1.5">
+              <i data-lucide="sparkles" class="w-3 h-3"></i>
+              <span>Global Program</span>
+            </div>
+
+            <div class="space-y-6">
+              <div>
+                <span class="text-xs font-mono font-semibold text-cyan-400 uppercase tracking-wider">Career Services</span>
+                <h3 class="text-2xl font-bold text-white mt-1">International Job Search Package</h3>
+                <p class="text-xs text-gray-400 mt-1">Global Career Positioning Program</p>
+              </div>
+
+              <div class="py-4 border-y border-cyan-500/15">
+                <div class="text-xs text-gray-400 font-medium uppercase tracking-wider mb-1">Starting from</div>
+                <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-blue-300">
+                  PKR 1,000,000
+                </div>
+              </div>
+
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Designed for ambitious professionals exploring international employment opportunities, remote worldwide roles, and global career transitions.
+              </p>
+
+              <div class="space-y-3 pt-2">
+                <div class="text-xs font-semibold text-gray-300 uppercase tracking-wider">Included Deliverables:</div>
+                <ul class="space-y-2.5 text-xs text-gray-300">
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>International opportunity research &amp; market mapping</span></li>
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>Global-standard professional profile guidance</span></li>
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>International career planning &amp; roadmap</span></li>
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>Job-search support according to the agreed scope</span></li>
+                </ul>
+              </div>
+
+              <div class="p-3 rounded-xl bg-dark-900 border border-cyan-500/20 text-[11px] text-gray-400 leading-relaxed">
+                Starting prices transparently stated. Package deliverables, duration, and applicable terms must be agreed upon in writing before payment. Career packages do not guarantee employment, interviews, job offers, visas, or overseas placements.
+              </div>
+            </div>
+
+            <div class="pt-8 mt-6 border-t border-cyan-500/15">
+              <button onclick="prefillContact('International Job Search Package (PKR 1,000,000)')" class="w-full py-3.5 px-4 rounded-xl font-semibold text-sm bg-gradient-to-r from-cyan-500 via-blue-600 to-violet-600 hover:from-cyan-400 hover:to-violet-500 text-white shadow-lg shadow-cyan-500/25 transition-all flex items-center justify-center space-x-2">
+                <span>Request International Package</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Package 3: Business & Technology Solutions -->
+          <div class="glass-card relative rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between">
+            <div class="space-y-6">
+              <div>
+                <span class="text-xs font-mono font-semibold text-cyan-400 uppercase tracking-wider">Enterprise Solutions</span>
+                <h3 class="text-2xl font-bold text-white mt-1">Business &amp; Technology Solutions</h3>
+                <p class="text-xs text-gray-400 mt-1">Enterprise AI, Engineering &amp; Consulting</p>
+              </div>
+
+              <div class="py-4 border-y border-cyan-500/15">
+                <div class="text-xs text-gray-400 font-medium uppercase tracking-wider mb-1">Engagement Model</div>
+                <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-blue-300">
+                  Custom Pricing
+                </div>
+              </div>
+
+              <p class="text-sm text-gray-300 leading-relaxed">
+                Comprehensive corporate solutions spanning B2B business development, bespoke artificial intelligence, software engineering, and cybersecurity.
+              </p>
+
+              <div class="space-y-3 pt-2">
+                <div class="text-xs font-semibold text-gray-300 uppercase tracking-wider">Solutions Covered:</div>
+                <ul class="space-y-2.5 text-xs text-gray-300">
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>Business development &amp; customer acquisition</span></li>
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>Generative AI development &amp; intelligent automation</span></li>
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>Software engineering &amp; cloud architecture</span></li>
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>Cybersecurity &amp; vulnerability assessments</span></li>
+                  <li class="flex items-start space-x-2.5"><i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i><span>IT consulting &amp; digital transformation</span></li>
+                </ul>
+              </div>
+
+              <div class="p-3 rounded-xl bg-dark-900 border border-cyan-500/20 text-[11px] text-gray-400 leading-relaxed">
+                All enterprise engagements are custom-scoped. Formal proposals outlining timelines, service tiers, milestones, and deliverable commitments are finalized prior to contract execution.
+              </div>
+            </div>
+
+            <div class="pt-8 mt-6 border-t border-cyan-500/15">
+              <button onclick="prefillContact('Business & Technology Solutions (Custom Pricing)')" class="w-full py-3.5 px-4 rounded-xl font-semibold text-sm bg-dark-900 hover:bg-cyan-950/80 text-cyan-300 hover:text-white border border-cyan-500/30 hover:border-cyan-400/60 transition-all flex items-center justify-center space-x-2">
+                <span>Request a Consultation</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Verification Notice Banner -->
+        <div class="mt-16 p-6 rounded-2xl bg-dark-950/80 border border-cyan-500/20 backdrop-blur-md max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-start space-x-4">
+            <div class="p-3 rounded-xl bg-cyan-950/80 text-cyan-400 border border-cyan-500/30 shrink-0">
+              <i data-lucide="shield" class="w-6 h-6"></i>
+            </div>
+            <div class="space-y-1">
+              <h4 class="text-base font-bold text-white">Engagement Verification &amp; Payment Security</h4>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                All package deliverables, timelines, milestones, and applicable refund terms must be formally agreed upon prior to transferring funds. We never request payments before confirming mutually approved scope documents.
+              </p>
+            </div>
+          </div>
+
+          <a href="#payment-info" class="shrink-0 px-5 py-2.5 rounded-xl bg-dark-900 hover:bg-dark-850 text-cyan-300 border border-cyan-500/40 text-xs font-semibold transition-all hover:border-cyan-400">
+            View Verified Payment Details
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. How It Works (7-Step Interactive Process) -->
+    <section id="how-it-works" class="py-24 relative overflow-hidden bg-dark-950/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+            <span>Structured Engagement Protocol</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            How It Works
+          </h2>
+          <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+            Our transparent 7-step process ensures clear expectations, mutual scope alignment, and verifiable security from initial inquiry to milestone execution.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="glass-card group p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-xl bg-cyan-950/90 border border-cyan-500/40 text-cyan-400 group-hover:bg-cyan-500 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-cyan-400 bg-dark-850 px-2.5 py-1 rounded-full border border-cyan-500/20">Step 01</span>
+              </div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">Choose Your Service</h3>
+              <p class="text-xs text-gray-300 leading-relaxed">Select the career, business, or technology service you need based on your goals.</p>
+            </div>
+          </div>
+
+          <div class="glass-card group p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-xl bg-cyan-950/90 border border-cyan-500/40 text-cyan-400 group-hover:bg-cyan-500 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="file-text" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-cyan-400 bg-dark-850 px-2.5 py-1 rounded-full border border-cyan-500/20">Step 02</span>
+              </div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">Submit Your Requirements</h3>
+              <p class="text-xs text-gray-300 leading-relaxed">Complete the contact form with relevant background, scope details, and objectives.</p>
+            </div>
+          </div>
+
+          <div class="glass-card group p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-xl bg-cyan-950/90 border border-cyan-500/40 text-cyan-400 group-hover:bg-cyan-500 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="message-square" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-cyan-400 bg-dark-850 px-2.5 py-1 rounded-full border border-cyan-500/20">Step 03</span>
+              </div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">Discuss Your Needs</h3>
+              <p class="text-xs text-gray-300 leading-relaxed">Clarify the objectives, scope, timelines, and expected deliverables with our advisors.</p>
+            </div>
+          </div>
+
+          <div class="glass-card group p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-xl bg-cyan-950/90 border border-cyan-500/40 text-cyan-400 group-hover:bg-cyan-500 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="file-check" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-cyan-400 bg-dark-850 px-2.5 py-1 rounded-full border border-cyan-500/20">Step 04</span>
+              </div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">Review the Agreement</h3>
+              <p class="text-xs text-gray-300 leading-relaxed">Confirm pricing, timelines, deliverables, and applicable refund terms in writing.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 2: Steps 5, 6, 7 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 lg:max-w-5xl lg:mx-auto">
+          
+          <div class="glass-card group p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-xl bg-violet-950/90 border border-violet-500/40 text-violet-400 group-hover:bg-violet-600 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="credit-card" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-violet-400 bg-dark-850 px-2.5 py-1 rounded-full border border-violet-500/20">Step 05</span>
+              </div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">Complete Payment</h3>
+              <p class="text-xs text-gray-300 leading-relaxed">Use the verified payment details provided after formal confirmation of the agreed scope.</p>
+            </div>
+          </div>
+
+          <div class="glass-card group p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-xl bg-violet-950/90 border border-violet-500/40 text-violet-400 group-hover:bg-violet-600 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="send" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-violet-400 bg-dark-850 px-2.5 py-1 rounded-full border border-violet-500/20">Step 06</span>
+              </div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">Submit Your Receipt</h3>
+              <p class="text-xs text-gray-300 leading-relaxed">Send the transaction reference through the official WhatsApp channel for verification.</p>
+            </div>
+          </div>
+
+          <div class="glass-card group p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-xl bg-violet-950/90 border border-violet-500/40 text-violet-400 group-hover:bg-violet-600 group-hover:text-white transition-all flex items-center justify-center">
+                  <i data-lucide="play-circle" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-violet-400 bg-dark-850 px-2.5 py-1 rounded-full border border-violet-500/20">Step 07</span>
+              </div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">Begin the Service</h3>
+              <p class="text-xs text-gray-300 leading-relaxed">Work starts after payment verification and mutual confirmation of the agreed scope.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-12 max-w-3xl mx-auto p-4 rounded-xl bg-dark-900/90 border border-cyan-500/20 text-xs text-gray-400 flex items-start space-x-3 text-center sm:text-left">
+          <i data-lucide="alert-circle" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5 hidden sm:block"></i>
+          <p>
+            <strong class="text-cyan-300">Important Process Note:</strong> Submitting a form or requesting an exploratory consultation does not automatically confirm an order or guarantee a service outcome. Formal execution starts only upon verified scope confirmation.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 12. Payment Information Section (Dedicated Expandable View) -->
+    <section id="payment-info" class="py-16 relative bg-dark-950/80">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="rounded-3xl bg-dark-900/90 border border-cyan-500/30 overflow-hidden shadow-2xl backdrop-blur-xl transition-all duration-300">
+          
+          <button id="togglePaymentBtn" class="w-full p-6 sm:p-8 flex items-center justify-between text-left hover:bg-dark-850/50 transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-400" aria-expanded="false">
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 rounded-2xl bg-cyan-950/80 border border-cyan-500/40 text-cyan-400 flex items-center justify-center shrink-0">
+                <i data-lucide="credit-card" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <div class="inline-flex items-center space-x-1.5 text-xs font-mono font-semibold text-cyan-400 uppercase tracking-wider mb-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+                  <span>Authorized Accounts</span>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-white">
+                  Verified Payment &amp; Remittance Details
+                </h3>
+                <p class="text-xs text-gray-400 mt-1">
+                  Click to reveal authorized bank coordinates &amp; payment safety instructions.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-2 rounded-xl bg-dark-850 border border-gray-700 text-gray-300">
+              <i id="paymentChevron" data-lucide="chevron-down" class="w-5 h-5 text-cyan-400"></i>
+            </div>
+          </button>
+
+          <!-- Collapsible Content -->
+          <div id="paymentContent" class="hidden p-6 sm:p-8 pt-0 border-t border-cyan-500/15 space-y-6">
+            
+            <div class="p-4 rounded-2xl bg-cyan-950/40 border border-cyan-500/30 text-xs sm:text-sm text-cyan-200 leading-relaxed flex items-start space-x-3">
+              <i data-lucide="shield-check" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5"></i>
+              <p>
+                <strong>Pre-Transfer Requirement:</strong> Customers must confirm their service, final price, and payment terms before transferring money.
+              </p>
+            </div>
+
+            <!-- Bank Coordinates Grid with Copy to Clipboard Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              
+              <!-- Bank -->
+              <div class="p-4 rounded-2xl bg-dark-950 border border-cyan-500/20 hover:border-cyan-400/50 transition-all flex items-center justify-between">
+                <div class="space-y-1 overflow-hidden pr-2">
+                  <span class="text-[11px] font-mono text-gray-400 uppercase tracking-wider block">Beneficiary Bank</span>
+                  <span class="text-base font-bold text-white font-mono block">Meezan Bank</span>
+                </div>
+                <button onclick="copyToClipboard('Meezan Bank', this)" class="p-2.5 rounded-xl border border-cyan-500/30 text-cyan-300 hover:bg-cyan-950/80 bg-dark-850 text-xs font-semibold flex items-center space-x-1.5 transition-all shrink-0">
+                  <i data-lucide="copy" class="w-4 h-4"></i>
+                  <span class="copy-label text-[11px] hidden sm:inline">Copy</span>
+                </button>
+              </div>
+
+              <!-- Title -->
+              <div class="p-4 rounded-2xl bg-dark-950 border border-cyan-500/20 hover:border-cyan-400/50 transition-all flex items-center justify-between">
+                <div class="space-y-1 overflow-hidden pr-2">
+                  <span class="text-[11px] font-mono text-gray-400 uppercase tracking-wider block">Account Title</span>
+                  <span class="text-base font-bold text-white font-mono block">MURTUZA KHALID</span>
+                </div>
+                <button onclick="copyToClipboard('MURTUZA KHALID', this)" class="p-2.5 rounded-xl border border-cyan-500/30 text-cyan-300 hover:bg-cyan-950/80 bg-dark-850 text-xs font-semibold flex items-center space-x-1.5 transition-all shrink-0">
+                  <i data-lucide="copy" class="w-4 h-4"></i>
+                  <span class="copy-label text-[11px] hidden sm:inline">Copy</span>
+                </button>
+              </div>
+
+              <!-- Account Number -->
+              <div class="p-4 rounded-2xl bg-dark-950 border border-cyan-500/20 hover:border-cyan-400/50 transition-all flex items-center justify-between">
+                <div class="space-y-1 overflow-hidden pr-2">
+                  <span class="text-[11px] font-mono text-gray-400 uppercase tracking-wider block">Account Number</span>
+                  <span class="text-base font-bold text-white font-mono block">99330102571482</span>
+                </div>
+                <button onclick="copyToClipboard('99330102571482', this)" class="p-2.5 rounded-xl border border-cyan-500/30 text-cyan-300 hover:bg-cyan-950/80 bg-dark-850 text-xs font-semibold flex items-center space-x-1.5 transition-all shrink-0">
+                  <i data-lucide="copy" class="w-4 h-4"></i>
+                  <span class="copy-label text-[11px] hidden sm:inline">Copy</span>
+                </button>
+              </div>
+
+              <!-- IBAN -->
+              <div class="p-4 rounded-2xl bg-dark-950 border border-cyan-500/20 hover:border-cyan-400/50 transition-all flex items-center justify-between">
+                <div class="space-y-1 overflow-hidden pr-2">
+                  <span class="text-[11px] font-mono text-gray-400 uppercase tracking-wider block">IBAN</span>
+                  <span class="text-sm sm:text-base font-bold text-white font-mono block truncate">PK68MEZN0099330102571482</span>
+                </div>
+                <button onclick="copyToClipboard('PK68MEZN0099330102571482', this)" class="p-2.5 rounded-xl border border-cyan-500/30 text-cyan-300 hover:bg-cyan-950/80 bg-dark-850 text-xs font-semibold flex items-center space-x-1.5 transition-all shrink-0">
+                  <i data-lucide="copy" class="w-4 h-4"></i>
+                  <span class="copy-label text-[11px] hidden sm:inline">Copy</span>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Required Payment Safety Notice -->
+            <div class="p-5 rounded-2xl bg-dark-950 border border-amber-500/30 text-xs text-amber-200/90 leading-relaxed flex items-start space-x-3.5">
+              <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+              <div class="space-y-1">
+                <span class="font-bold text-amber-300 block uppercase tracking-wider text-[11px]">Payment Safety Notice</span>
+                <p>
+                  Please verify the beneficiary details and agreed service terms before transferring funds. Retain your receipt and submit the transaction reference through our official WhatsApp contact channel. An order is confirmed only after payment verification.
+                </p>
+              </div>
+            </div>
+
+            <!-- WhatsApp Direct Verification Action -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-2xl bg-dark-950 border border-cyan-500/20">
+              <div class="text-xs text-gray-300">
+                Transferred funds? Submit receipt reference directly to WhatsApp:
+                <span class="font-mono text-cyan-300 font-bold ml-1">+923060824762</span>
+              </div>
+              <a href="https://wa.me/923060824762?text=Hello%20NextGenAI%2C%20I%20have%20completed%20the%20payment%20and%20would%20like%20to%20submit%20my%20transaction%20receipt%20for%20verification." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold transition-all shadow-md flex items-center space-x-2 shrink-0">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Submit Receipt on WhatsApp</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 11. Contact Section -->
+    <section id="contact" class="py-24 relative overflow-hidden bg-dark-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i>
+            <span>Direct Inquiry Channel</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            Let's Build Something Extraordinary.
+          </h2>
+          <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+            Whether you are pursuing a career opportunity, expanding your business, or building an intelligent technology solution, NextGenAI is ready to discuss your goals.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Left Column (5 Cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div class="p-7 rounded-3xl bg-gradient-to-br from-dark-900/90 to-dark-950/90 border border-cyan-500/30 shadow-2xl backdrop-blur-xl space-y-6">
+              <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-950 border border-emerald-500/40 text-emerald-400 flex items-center justify-center shrink-0">
+                  <i data-lucide="phone" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] font-mono font-semibold text-emerald-400 uppercase tracking-wider block">Fastest Response Channel</span>
+                  <h3 class="text-xl font-bold text-white">Official WhatsApp Contact</h3>
+                </div>
+              </div>
+
+              <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                Connect directly with our consulting team for scope discussions, profile reviews, or payment receipt verification.
+              </p>
+
+              <div class="p-4 rounded-2xl bg-dark-950 border border-emerald-500/20 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] font-mono text-gray-400 uppercase block">WhatsApp Destination</span>
+                  <span class="text-base sm:text-lg font-mono font-bold text-emerald-300 block">+923060824762</span>
+                </div>
+                <a href="https://wa.me/923060824762" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition-all flex items-center space-x-1 shadow-md">
+                  <span>Chat Now</span>
+                  <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-dark-900/60 border border-cyan-500/20 backdrop-blur-md space-y-3">
+              <div class="flex items-center space-x-2 text-cyan-400 text-xs font-bold uppercase tracking-wider">
+                <i data-lucide="shield" class="w-4 h-4"></i>
+                <span>Strict Client Data Confidentiality</span>
+              </div>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                NextGenAI will never collect passwords, banking PINs, OTPs, or confidential banking credentials. We treat all career resumes and commercial requirements under strict non-disclosure principles.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Form (7 Cols) -->
+          <div class="lg:col-span-7">
+            <div class="p-8 sm:p-10 rounded-3xl bg-dark-900/80 border border-cyan-500/30 backdrop-blur-xl shadow-2xl">
+              
+              <div class="mb-8">
+                <h3 class="text-2xl font-bold text-white">Send Your Project or Career Inquiry</h3>
+                <p class="text-xs sm:text-sm text-gray-400 mt-1">Fill in your requirements below to generate an immediate inquiry for review.</p>
+              </div>
+
+              <form id="contactForm" class="space-y-5" onsubmit="handleFormSubmit(event)">
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div class="space-y-1.5">
+                    <label class="block text-xs font-semibold text-gray-300">Full Name <span class="text-cyan-400">*</span></label>
+                    <input type="text" id="formFullName" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3 rounded-xl bg-dark-950 border border-cyan-500/20 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all" />
+                  </div>
+                  <div class="space-y-1.5">
+                    <label class="block text-xs font-semibold text-gray-300">Email Address <span class="text-cyan-400">*</span></label>
+                    <input type="email" id="formEmail" required placeholder="sarah@example.com" class="w-full px-4 py-3 rounded-xl bg-dark-950 border border-cyan-500/20 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div class="space-y-1.5">
+                    <label class="block text-xs font-semibold text-gray-300">WhatsApp Number <span class="text-cyan-400">*</span></label>
+                    <input type="tel" id="formWhatsApp" required placeholder="+92 300 1234567" class="w-full px-4 py-3 rounded-xl bg-dark-950 border border-cyan-500/20 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all" />
+                  </div>
+                  <div class="space-y-1.5">
+                    <label class="block text-xs font-semibold text-gray-300">Country &amp; City <span class="text-cyan-400">*</span></label>
+                    <input type="text" id="formCountry" required placeholder="e.g. Karachi, Pakistan / Dubai, UAE" class="w-full px-4 py-3 rounded-xl bg-dark-950 border border-cyan-500/20 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div class="space-y-1.5">
+                    <label class="block text-xs font-semibold text-gray-300">Service Category <span class="text-cyan-400">*</span></label>
+                    <select id="formService" class="w-full px-4 py-3 rounded-xl bg-dark-950 border border-cyan-500/20 text-sm text-white focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all">
+                      <option value="Global Careers & Recruitment Support">Career Assistance (Global / Karachi)</option>
+                      <option value="Business Development & Customer Acquisition">Business Development &amp; Lead Generation</option>
+                      <option value="Artificial Intelligence & Intelligent Automation">AI &amp; Intelligent Automation</option>
+                      <option value="Software Development & IT Solutions">Software Development &amp; Web Platforms</option>
+                      <option value="Cybersecurity & Security Technology">Cybersecurity &amp; Hardening</option>
+                      <option value="Digital Transformation & Business Consulting">Digital Transformation &amp; Consulting</option>
+                      <option value="IT Consulting">IT Consulting &amp; Architecture</option>
+                      <option value="General Inquiry">Other Inquiries</option>
+                    </select>
+                  </div>
+                  <div class="space-y-1.5">
+                    <label class="block text-xs font-semibold text-gray-300">Budget Range</label>
+                    <select id="formBudget" class="w-full px-4 py-3 rounded-xl bg-dark-950 border border-cyan-500/20 text-sm text-white focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all">
+                      <option value="PKR 100,000 - 500,000">PKR 100,000 - 500,000</option>
+                      <option value="PKR 500,000 - 1,000,000">PKR 500,000 - 1,000,000</option>
+                      <option value="PKR 1,000,000 - 3,000,000">PKR 1,000,000 - 3,000,000</option>
+                      <option value="PKR 3,000,000+ (Enterprise)">PKR 3,000,000+ (Enterprise Scope)</option>
+                      <option value="To Be Determined">To Be Determined / Advisory Discussion</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="space-y-1.5">
+                  <label class="block text-xs font-semibold text-gray-300">Project or Career Requirements <span class="text-cyan-400">*</span></label>
+                  <textarea id="formRequirements" required rows="4" placeholder="Briefly describe your objectives, current status or organization needs, expected deliverables, and target timeline..." class="w-full px-4 py-3 rounded-xl bg-dark-950 border border-cyan-500/20 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all"></textarea>
+                </div>
+
+                <div class="space-y-1 pt-1">
+                  <label class="flex items-start space-x-3 cursor-pointer">
+                    <input type="checkbox" id="formConsent" required class="mt-1 h-4 w-4 rounded border-cyan-500/40 bg-dark-950 text-cyan-500 focus:ring-cyan-400" />
+                    <span class="text-xs text-gray-400">
+                      I agree that NextGenAI may process my contact details to evaluate my inquiry, prepare a customized engagement proposal, and contact me via WhatsApp or email.
+                    </span>
+                  </label>
+                </div>
+
+                <div class="pt-4">
+                  <button type="submit" class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-600 to-violet-600 hover:from-cyan-400 hover:to-violet-500 text-white font-bold text-sm tracking-wide shadow-xl shadow-cyan-500/25 transition-all duration-300 flex items-center justify-center space-x-2">
+                    <span>Proceed to WhatsApp Inquiry &amp; Summary</span>
+                    <i data-lucide="send" class="w-4 h-4 ml-1"></i>
+                  </button>
+                  <p class="text-[11px] text-gray-500 text-center mt-2.5">
+                    Validates inputs in-browser and formats an immediate inquiry packet for dispatch to +923060824762.
+                  </p>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Submission Summary Modal -->
+      <div id="inquiryModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div class="w-full max-w-xl rounded-3xl bg-dark-900 border border-cyan-500/40 p-6 sm:p-8 shadow-2xl space-y-6">
+          <div class="flex items-center justify-between border-b border-cyan-500/20 pb-4">
+            <div class="flex items-center space-x-2">
+              <i data-lucide="sparkles" class="w-5 h-5 text-cyan-400"></i>
+              <h4 class="text-lg font-bold text-white">Inquiry Compiled Successfully</h4>
+            </div>
+            <button onclick="closeInquiryModal()" class="text-gray-400 hover:text-white text-lg p-1">✕</button>
+          </div>
+          <div id="modalSummaryContent" class="p-4 rounded-xl bg-dark-950 border border-gray-800 text-xs font-mono text-gray-300 whitespace-pre-wrap leading-relaxed max-h-56 overflow-y-auto"></div>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Your inquiry packet has been verified and formatted. Click below to open WhatsApp and transmit directly to NextGenAI, or copy the formatted text.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a id="modalWhatsAppBtn" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold transition-all shadow-md flex items-center justify-center space-x-2">
+              <i data-lucide="message-square" class="w-4 h-4"></i>
+              <span>Send via WhatsApp (+923060824762)</span>
+            </a>
+            <button onclick="copyModalSummary()" id="modalCopyBtn" class="py-3 px-4 rounded-xl bg-dark-850 hover:bg-dark-800 border border-cyan-500/30 text-cyan-300 text-xs font-semibold transition-all flex items-center justify-center space-x-2">
+              <i data-lucide="copy" class="w-4 h-4"></i>
+              <span id="modalCopyLabel">Copy Text</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- 14. Footer — With EXACT Required Copyright -->
+  <footer class="relative bg-dark-950 border-t border-cyan-500/20 pt-16 pb-12 overflow-hidden text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12">
+        
+        <!-- Brand Info (4 Cols) -->
+        <div class="lg:col-span-4 space-y-5">
+          <a href="#hero" class="flex items-center space-x-3 text-left">
+            <div class="w-10 h-10 rounded-xl bg-dark-900 border border-cyan-500/40 flex items-center justify-center p-1.5 shadow-md">
+              <svg viewBox="0 0 100 100" class="w-full h-full">
+                <path d="M24 75 L24 25 L45 25 L76 75 L76 25" fill="none" stroke="url(#footGrad)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="24" cy="25" r="5" fill="#00F0FF" />
+                <circle cx="76" cy="75" r="5" fill="#8B5CF6" />
+                <defs>
+                  <linearGradient id="footGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00F0FF" />
+                    <stop offset="50%" stop-color="#3B82F6" />
+                    <stop offset="100%" stop-color="#8B5CF6" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="text-xl font-bold tracking-tight text-white">
+              NextGen<span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-400">AI</span>
+            </span>
+          </a>
+
+          <p class="text-xs sm:text-sm text-gray-300 leading-relaxed max-w-sm">
+            Empowering Careers. Accelerating Business. Engineering the Future. A global technology company providing executive career support, enterprise customer acquisition, bespoke artificial intelligence, software engineering, and defensive cybersecurity.
+          </p>
+
+          <div class="pt-2 flex items-center space-x-3 text-xs text-gray-400">
+            <span class="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-dark-900 border border-gray-800 text-cyan-300 font-mono text-[11px]">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping"></span>
+              <span>Enterprise Portal</span>
+            </span>
+            <span>•</span>
+            <span class="font-mono text-[11px]">Global Operations</span>
+          </div>
+        </div>
+
+        <!-- Quick Links (2 Cols) -->
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="#hero" class="hover:text-cyan-300 transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-cyan-300 transition-colors">About Us</a></li>
+            <li><a href="#services" class="hover:text-cyan-300 transition-colors">Services</a></li>
+            <li><a href="#industries" class="hover:text-cyan-300 transition-colors">Industries</a></li>
+            <li><a href="#pricing" class="hover:text-cyan-300 transition-colors">Pricing</a></li>
+            <li><a href="#how-it-works" class="hover:text-cyan-300 transition-colors">How It Works</a></li>
+            <li><a href="#contact" class="hover:text-cyan-300 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Solutions (3 Cols) -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">Core Capabilities</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="#services" class="hover:text-cyan-300 transition-colors">Global Careers &amp; Recruitment</a></li>
+            <li><a href="#services" class="hover:text-cyan-300 transition-colors">Business Development &amp; Pipelines</a></li>
+            <li><a href="#services" class="hover:text-cyan-300 transition-colors">Artificial Intelligence &amp; LLMs</a></li>
+            <li><a href="#services" class="hover:text-cyan-300 transition-colors">Custom Software Engineering</a></li>
+            <li><a href="#services" class="hover:text-cyan-300 transition-colors">Cybersecurity &amp; Threat Defense</a></li>
+            <li><a href="#services" class="hover:text-cyan-300 transition-colors">IT Consulting &amp; Architecture</a></li>
+          </ul>
+        </div>
+
+        <!-- Official WhatsApp & Back to Top (3 Cols) -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">Official Contact</h4>
+          <div class="p-4 rounded-xl bg-dark-900 border border-cyan-500/20 space-y-3">
+            <div class="flex items-center space-x-2 text-xs text-white">
+              <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
+              <span class="font-mono font-bold text-emerald-300">+923060824762</span>
+            </div>
+            <a href="https://wa.me/923060824762" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center space-x-1.5 py-2 px-3 rounded-lg bg-emerald-600/90 hover:bg-emerald-500 text-white text-xs font-semibold transition-all shadow-sm">
+              <span>Direct WhatsApp Chat</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="inline-flex items-center space-x-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors">
+              <i data-lucide="arrow-up" class="w-4 h-4"></i>
+              <span>Return to Top</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Live Visitor Analytics Section -->
+      <div class="my-10 p-6 sm:p-7 rounded-2xl bg-dark-900/80 border border-cyan-500/20 backdrop-blur-xl shadow-xl">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-cyan-500/15">
+          <div class="flex items-center space-x-3">
+            <div class="relative flex items-center justify-center">
+              <span class="w-3 h-3 rounded-full bg-emerald-400 animate-ping absolute"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 relative"></span>
+            </div>
+            <div>
+              <h4 class="text-sm sm:text-base font-bold text-white tracking-wide flex items-center gap-2">
+                Live Visitor Statistics
+                <span class="px-2 py-0.5 text-[10px] font-mono font-medium rounded-full bg-cyan-950 border border-cyan-500/30 text-cyan-300">
+                  REAL-TIME
+                </span>
+              </h4>
+              <p class="text-[11px] text-gray-400">
+                Audited platform analytics &amp; continuous traffic telemetry
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2 text-[11px] font-mono text-gray-400 bg-dark-950 px-3 py-1.5 rounded-lg border border-gray-800">
+            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            <span>Daily Reset: <strong class="text-cyan-300">00:00:00 PKT (UTC+5)</strong></span>
+          </div>
+        </div>
+
+        <!-- 4 Metrics Grid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Metric 1: Total Visitors -->
+          <div class="p-4 rounded-xl bg-dark-950/80 border border-cyan-500/15 hover:border-cyan-400/40 transition-all flex items-center space-x-3.5">
+            <div class="w-10 h-10 rounded-lg bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 flex items-center justify-center shrink-0">
+              <i data-lucide="users" class="w-5 h-5"></i>
+            </div>
+            <div class="overflow-hidden">
+              <span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-gray-400 block truncate">Total Visitors</span>
+              <span id="statTotalVisitors" class="text-lg sm:text-2xl font-extrabold text-white font-mono tracking-tight" data-value="0">0</span>
+              <span class="text-[9px] text-gray-500 block truncate">All-Time Unique</span>
+            </div>
+          </div>
+
+          <!-- Metric 2: Today's Visitors -->
+          <div class="p-4 rounded-xl bg-dark-950/80 border border-cyan-500/15 hover:border-cyan-400/40 transition-all flex items-center space-x-3.5">
+            <div class="w-10 h-10 rounded-lg bg-blue-950/80 border border-blue-500/30 text-blue-400 flex items-center justify-center shrink-0">
+              <i data-lucide="calendar" class="w-5 h-5"></i>
+            </div>
+            <div class="overflow-hidden">
+              <span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-gray-400 block truncate">Today's Visitors</span>
+              <span id="statTodayVisitors" class="text-lg sm:text-2xl font-extrabold text-white font-mono tracking-tight" data-value="0">0</span>
+              <span class="text-[9px] text-cyan-400/80 block truncate">PKT Standard Day</span>
+            </div>
+          </div>
+
+          <!-- Metric 3: Online Visitors -->
+          <div class="p-4 rounded-xl bg-dark-950/80 border border-cyan-500/15 hover:border-cyan-400/40 transition-all flex items-center space-x-3.5">
+            <div class="w-10 h-10 rounded-lg bg-emerald-950/80 border border-emerald-500/30 text-emerald-400 flex items-center justify-center shrink-0 relative">
+              <i data-lucide="activity" class="w-5 h-5"></i>
+              <span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-emerald-400"></span>
+            </div>
+            <div class="overflow-hidden">
+              <span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-gray-400 block truncate">Online Visitors</span>
+              <span id="statOnlineVisitors" class="text-lg sm:text-2xl font-extrabold text-emerald-300 font-mono tracking-tight" data-value="0">0</span>
+              <span class="text-[9px] text-emerald-400/80 block truncate">Active (5m Window)</span>
+            </div>
+          </div>
+
+          <!-- Metric 4: Total Page Views -->
+          <div class="p-4 rounded-xl bg-dark-950/80 border border-cyan-500/15 hover:border-cyan-400/40 transition-all flex items-center space-x-3.5">
+            <div class="w-10 h-10 rounded-lg bg-violet-950/80 border border-violet-500/30 text-violet-400 flex items-center justify-center shrink-0">
+              <i data-lucide="eye" class="w-5 h-5"></i>
+            </div>
+            <div class="overflow-hidden">
+              <span class="text-[10px] font-mono font-semibold uppercase tracking-wider text-gray-400 block truncate">Total Page Views</span>
+              <span id="statTotalViews" class="text-lg sm:text-2xl font-extrabold text-white font-mono tracking-tight" data-value="0">0</span>
+              <span class="text-[9px] text-gray-500 block truncate">Catalog &amp; Services</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thin Gradient Divider -->
+      <div class="h-px w-full bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent my-8"></div>
+
+      <!-- EXACT REQUIRED COPYRIGHT FORMAT -->
+      <div class="footer-bottom">
+        <p>
+          Copyright NexGenAI © 2026 Developed by
+          <a href="https://murtuzadeveloper.github.io/" target="_blank" rel="noopener noreferrer">
+            <strong>Murtuza Developer</strong>
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end">
+    <div class="relative group">
+      <div class="absolute -inset-1 rounded-full bg-emerald-500/40 blur-md group-hover:bg-emerald-400/60 animate-pulse transition-all"></div>
+      <a href="https://wa.me/923060824762" target="_blank" rel="noopener noreferrer" class="relative w-14 h-14 rounded-full bg-gradient-to-tr from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 focus:outline-none" aria-label="Chat with NextGenAI on WhatsApp">
+        <svg viewBox="0 0 24 24" class="w-7 h-7 fill-current">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.7C7.02 10.92 7.91 12.09 8.03 12.25C8.16 12.41 9.77 14.9 12.25 15.97C12.84 16.23 13.3 16.38 13.66 16.5C14.25 16.69 14.79 16.66 15.22 16.6C15.7 16.53 16.7 15.99 16.91 15.41C17.11 14.82 17.11 14.32 17.05 14.22C16.99 14.12 16.83 14.06 16.58 13.93C16.34 13.81 15.11 13.2 14.88 13.12C14.65 13.04 14.49 13 14.32 13.25C14.16 13.5 13.69 14.06 13.55 14.22C13.41 14.37 13.27 14.39 13.03 14.27C12.79 14.14 12.01 13.89 11.08 13.06C10.36 12.41 9.87 11.61 9.73 11.37C9.59 11.12 9.71 10.99 9.84 10.87C9.95 10.76 10.08 10.59 10.2 10.45C10.32 10.31 10.36 10.2 10.44 10.04C10.52 9.88 10.48 9.73 10.42 9.61C10.36 9.5 9.87 8.3 9.67 7.81C9.47 7.33 9.27 7.4 9.12 7.39C8.97 7.39 8.81 7.38 8.65 7.38L8.53 7.33Z" />
+        </svg>
+        <span class="absolute top-0 right-0 w-3.5 h-3.5 bg-cyan-400 border-2 border-dark-950 rounded-full"></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Interactive Logic Scripts -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // 1. Navigation Scroll State
+    const mainNav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        mainNav.classList.add('bg-dark-950/85', 'backdrop-blur-md', 'border-b', 'border-cyan-500/15', 'py-3', 'shadow-lg');
+        mainNav.classList.remove('py-5', 'bg-transparent');
+      } else {
+        mainNav.classList.remove('bg-dark-950/85', 'backdrop-blur-md', 'border-b', 'border-cyan-500/15', 'py-3', 'shadow-lg');
+        mainNav.classList.add('py-5', 'bg-transparent');
+      }
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if (mobileMenuBtn && mobileDrawer) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileDrawer.classList.toggle('hidden');
+      });
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => mobileDrawer.classList.add('hidden'));
+      });
+    }
+
+    // 2. Expandable Payment Accordion
+    const togglePaymentBtn = document.getElementById('togglePaymentBtn');
+    const paymentContent = document.getElementById('paymentContent');
+    const paymentChevron = document.getElementById('paymentChevron');
+
+    if (togglePaymentBtn && paymentContent) {
+      togglePaymentBtn.addEventListener('click', () => {
+        const isHidden = paymentContent.classList.contains('hidden');
+        if (isHidden) {
+          paymentContent.classList.remove('hidden');
+          togglePaymentBtn.setAttribute('aria-expanded', 'true');
+          paymentChevron.setAttribute('data-lucide', 'chevron-up');
+        } else {
+          paymentContent.classList.add('hidden');
+          togglePaymentBtn.setAttribute('aria-expanded', 'false');
+          paymentChevron.setAttribute('data-lucide', 'chevron-down');
+        }
+        lucide.createIcons();
+      });
+    }
+
+    // Copy to Clipboard Utility
+    function copyToClipboard(text, btnElement) {
+      navigator.clipboard.writeText(text).then(() => {
+        const label = btnElement.querySelector('.copy-label');
+        if (label) label.textContent = 'Copied!';
+        btnElement.classList.add('bg-emerald-950', 'border-emerald-500', 'text-emerald-400');
+        setTimeout(() => {
+          if (label) label.textContent = 'Copy';
+          btnElement.classList.remove('bg-emerald-950', 'border-emerald-500', 'text-emerald-400');
+        }, 2000);
+      });
+    }
+
+    // Prefill Contact Form from Service / Pricing Card
+    function prefillContact(serviceTitle) {
+      const serviceSelect = document.getElementById('formService');
+      const requirementsText = document.getElementById('formRequirements');
+      if (serviceSelect) {
+        for (let i = 0; i < serviceSelect.options.length; i++) {
+          if (serviceTitle.toLowerCase().includes(serviceSelect.options[i].text.toLowerCase().slice(0, 10))) {
+            serviceSelect.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      if (requirementsText && !requirementsText.value) {
+        requirementsText.value = `I am interested in consulting regarding: ${serviceTitle}.`;
+      }
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Form Validation & WhatsApp Submission Flow
+    let currentInquiryText = '';
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const fullName = document.getElementById('formFullName').value.trim();
+      const email = document.getElementById('formEmail').value.trim();
+      const whatsapp = document.getElementById('formWhatsApp').value.trim();
+      const country = document.getElementById('formCountry').value.trim();
+      const service = document.getElementById('formService').value;
+      const budget = document.getElementById('formBudget').value;
+      const requirements = document.getElementById('formRequirements').value.trim();
+      const consent = document.getElementById('formConsent').checked;
+
+      if (!fullName || !email || !whatsapp || !country || !requirements || !consent) {
+        alert('Please complete all required fields and check the privacy consent.');
+        return;
+      }
+
+      currentInquiryText = 
+        `*New NextGenAI Service Inquiry*\n\n` +
+        `*Client Name:* ${fullName}\n` +
+        `*Email:* ${email}\n` +
+        `*WhatsApp:* ${whatsapp}\n` +
+        `*Country/City:* ${country}\n` +
+        `*Service Category:* ${service}\n` +
+        `*Estimated Budget:* ${budget}\n\n` +
+        `*Requirements Overview:*\n${requirements}\n\n` +
+        `_Submitted via NextGenAI Corporate Web Portal_`;
+
+      const encoded = encodeURIComponent(currentInquiryText);
+      const waUrl = `https://wa.me/923060824762?text=${encoded}`;
+
+      document.getElementById('modalSummaryContent').textContent = currentInquiryText;
+      document.getElementById('modalWhatsAppBtn').href = waUrl;
+      document.getElementById('inquiryModal').classList.remove('hidden');
+    }
+
+    function closeInquiryModal() {
+      document.getElementById('inquiryModal').classList.add('hidden');
+    }
+
+    function copyModalSummary() {
+      navigator.clipboard.writeText(currentInquiryText).then(() => {
+        const label = document.getElementById('modalCopyLabel');
+        label.textContent = 'Copied to Clipboard!';
+        setTimeout(() => {
+          label.textContent = 'Copy Text';
+        }, 2000);
+      });
+    }
+
+    // 3. Interactive Neural Network Canvas Animation
+    (function initNeuralCanvas() {
+      const canvas = document.getElementById('neuralCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
+
+      let width = canvas.width = window.innerWidth;
+      let height = canvas.height = window.innerHeight;
+
+      const particleCount = Math.min(Math.floor((width * height) / 18000), 75);
+      const particles = [];
+      const colors = ['#00F0FF', '#3B82F6', '#8B5CF6'];
+
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          vx: (Math.random() - 0.5) * 0.45,
+          vy: (Math.random() - 0.5) * 0.45,
+          radius: Math.random() * 1.8 + 0.8,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          alpha: Math.random() * 0.5 + 0.25
+        });
+      }
+
+      let mouseX = -1000, mouseY = -1000;
+      window.addEventListener('mousemove', e => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      }, { passive: true });
+
+      window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      });
+
+      function render() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < 130) {
+              const alpha = (1 - dist / 130) * 0.18;
+              ctx.strokeStyle = `rgba(0, 240, 255, ${alpha})`;
+              ctx.lineWidth = 0.8;
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.stroke();
+            }
+          }
+
+          const mdx = particles[i].x - mouseX;
+          const mdy = particles[i].y - mouseY;
+          const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
+          if (mdist < 160) {
+            const mAlpha = (1 - mdist / 160) * 0.35;
+            ctx.strokeStyle = `rgba(139, 92, 246, ${mAlpha})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(mouseX, mouseY);
+            ctx.stroke();
+          }
+
+          ctx.fillStyle = particles[i].color;
+          ctx.globalAlpha = particles[i].alpha;
+          ctx.beginPath();
+          ctx.arc(particles[i].x, particles[i].y, particles[i].radius, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.globalAlpha = 1.0;
+
+          particles[i].x += particles[i].vx;
+          particles[i].y += particles[i].vy;
+
+          if (particles[i].x < 0) particles[i].x = width;
+          if (particles[i].x > width) particles[i].x = 0;
+          if (particles[i].y < 0) particles[i].y = height;
+          if (particles[i].y > height) particles[i].y = 0;
+        }
+
+        requestAnimationFrame(render);
+      }
+      render();
+    })();
+  </script>
+  <!-- Visitor Counter Scripts -->
+  <script src="./visitor-counter-config.js"></script>
+  <script src="./visitor-counter.js"></script>
+</body>
+</html>
+
